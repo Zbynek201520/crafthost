@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftHost Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo"><span>☁</span> CraftHost</a>
+    <nav>
+        <a href="index.html">Domů</a>
+        <a href="#server">Moje servery</a>
+    </nav>
+</header>
+
+<section class="pricing" id="server">
+    <h2>CraftHost Panel</h2>
+    <p class="subtitle">Spravuj svůj Minecraft server na jednom místě.</p>
+
+    <div class="price-grid">
+        <article class="price-card popular">
+            <h3>Můj Minecraft server</h3>
+            <div class="tag">● TESTOVACÍ SERVER</div>
+            <p>Stav: <strong id="status">Vypnutý</strong></p>
+            <p>RAM: 2 GB</p>
+            <p>Úložiště: 5 GB</p>
+
+            <button class="button" onclick="startServer()">Start</button>
+            <button class="button secondary" onclick="stopServer()">Stop</button>
+            <button class="button secondary" onclick="restartServer()">Restart</button>
+        </article>
+    </div>
+
+    <p class="notice">
+        Toto je pouze ukázkový panel. Zatím neovládá skutečný Minecraft server.
+    </p>
+</section>
+
+<script src="panel.js"></script>
+</body>
+</html>
